@@ -6,11 +6,11 @@
 *                           @Donchitos
 
 # Core configuration — owner review required
-CLAUDE.md                   @Donchitos
-.claude/                    @Donchitos
+AGENTS.md                   @Donchitos
+.opencode/                    @Donchitos
 settings.json               @Donchitos
 
 # Skills and agents — high-impact, review carefully
-.claude/skills/             @Donchitos
-.claude/agents/             @Donchitos
-.claude/hooks/              @Donchitos
+.opencode/skills/             @Donchitos
+.opencode/agents/             @Donchitos
+.opencode/hooks/              @Donchitos

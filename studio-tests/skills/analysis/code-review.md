@@ -15,7 +15,7 @@ match wins: CHANGES REQUIRED, NOT ASSESSED (nothing to review, the engine
 specialist review did not run, or a report section — such as ADR Compliance on a
 referenced ADR that could not be read — reads NOT ASSESSED), APPROVED WITH
 SUGGESTIONS, APPROVED. It grants only `git log` from Bash. Phase 9
-offers next steps via `AskUserQuestion`. The skill is read-only and invokes no
+offers next steps via `question`. The skill is read-only and invokes no
 director gates.
 
 ---
@@ -43,7 +43,7 @@ engine specialists and `qa-tester` as reviewers (Phase 7); those are not gates.
 
 Every case's `project.yaml` sets `modes.rigor: minimal` and
 `modes.automation: collaborative`, with no `project.local.yaml`, unless its own
-Fixture says otherwise. Rules: `studio-tests/CLAUDE.md` §
+Fixture says otherwise. Rules: `studio-tests/AGENTS.md` §
 Fixture defaults.
 
 ---
@@ -73,7 +73,7 @@ Fixture defaults.
 4. `godot-gdscript-specialist` is spawned via `Agent` for the `.gd` file; `shader: null` and `ui: null` are treated as unset and not spawned
 5. Report shows ADR Compliance: COMPLIANT, Standards Compliance: 6/6 passing, Engine Specialist Findings: CLEAN, Testability: `N/A — no story path given`, and a Positive Observations section
 6. Verdict is APPROVED
-7. Phase 9 `AskUserQuestion` offers [A] Run `/story-done` and [B] Stop here
+7. Phase 9 `question` offers [A] Run `/story-done` and [B] Stop here
 
 **Assertions:**
 - [ ] The ADR is read with a heading map and bounded reads of `## Decision` and `## Consequences`, not an unbounded full read
@@ -171,7 +171,7 @@ Fixture defaults.
 ### Case 5: No Engine Configured — Skipped specialists announce themselves; no gate
 
 **Fixture:**
-- `project.yaml` has `modes.review_mode: full` and no `engine.name`; `.claude/docs/technical-preferences.md` reads `[TO BE CONFIGURED]`
+- `project.yaml` has `modes.review_mode: full` and no `engine.name`; `.opencode/docs/technical-preferences.md` reads `[TO BE CONFIGURED]`
 - `src/gameplay/loot_system.gd` hardcodes a drop rate `0.05` at line 31; everything else meets the standards
 
 **Input:** `/code-review src/gameplay/loot_system.gd`
@@ -198,7 +198,7 @@ Fixture defaults.
 ### Case 5b: No Engine Configured, Clean File — NOT ASSESSED, never APPROVED
 
 **Fixture:**
-- `project.yaml` has no `engine.name`; `.claude/docs/technical-preferences.md` reads `[TO BE CONFIGURED]`
+- `project.yaml` has no `engine.name`; `.opencode/docs/technical-preferences.md` reads `[TO BE CONFIGURED]`
 - `src/gameplay/loot_table.gd` meets all six Phase 4 checks and raises no architecture, SOLID or game-specific concern
 
 **Input:** `/code-review src/gameplay/loot_table.gd`
