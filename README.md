@@ -185,12 +185,13 @@ Hooks fail gracefully if optional tools are missing — you just lose validation
 
 1. **Clone or use as template**:
    ```bash
-   git clone <this-repository-url> my-game
+   git clone https://github.com/cfyz1297/Claude-Code-Game-Studios.git my-game
    cd my-game
    ```
-   This tree is the OpenCode port. The original Claude Code template lives at
-   `Donchitos/Claude-Code-Game-Studios`; do not clone that one expecting these
-   files.
+   This tree is the OpenCode port of
+   [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+   v1.2.0. What it changes, and what it deliberately does not, is in
+   [PORT.md](PORT.md).
 
 2. **Open OpenCode in the project's root folder** (the one holding
    `AGENTS.md` and `project.yaml`) and start a session:
