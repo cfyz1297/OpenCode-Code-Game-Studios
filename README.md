@@ -185,7 +185,7 @@ Hooks fail gracefully if optional tools are missing — you just lose validation
 
 1. **Clone or use as template**:
    ```bash
-   git clone https://github.com/cfyz1297/Claude-Code-Game-Studios.git my-game
+   git clone https://github.com/cfyz1297/OpenCode-Code-Game-Studios.git my-game
    cd my-game
    ```
    This tree is the OpenCode port of

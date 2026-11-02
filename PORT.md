@@ -118,7 +118,7 @@ faked:
 ## Install
 
 ```bash
-git clone https://github.com/cfyz1297/Claude-Code-Game-Studios.git
+git clone https://github.com/cfyz1297/OpenCode-Code-Game-Studios.git
 cd Claude-Code-Game-Studios
 opencode
 ```
